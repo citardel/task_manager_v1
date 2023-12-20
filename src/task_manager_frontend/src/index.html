@@ -1,24 +1,73 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>task_manager</title>
-    <base href="/" />
-    <link rel="icon" href="favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="main.css" />
-  </head>
-  <body>
-    <main>
-      <img src="logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light">
+    <title>Task Manager</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <div class="header">
+            <form class="f-search" id="searchForm">
+                <input id="name" alt="Name" type="text" placeholder="Search for a task" required/>
+                <button class="b-search" type="submit"><i class="fa-light fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </div>
+
+    </div>
+    <div class="container1">
+        <div class="result" style="display: none;">
+            <h2>Results</h2>
+            <div class="result-tab">
+                <h2>Looking for tasks...</h2>
+            </div>
+        </div>
+        <div class="pending">
+            <h2>Pending</h2>
+            <div class="pending-tab">
+            <h2>Loading tasks...</h2>
+            </div>
+        </div>
+        <div class="completed">
+            <h2>Completed</h2>
+            <div class="completed-tab">
+                <h2>Loading tasks...</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-button"><i class="fa-light fa-circle-plus"></i></div>
+    
+    <div class="container2">
+      <form class="f-add" id="addForm">
+        <h2>ADD</h2>
+        <input type="text" placeholder="Title" id="f-add-title" required/>
+        <input type="text" placeholder="Description" id="f-add-description" required/>
+        <input type="date" placeholder="yy-mm-dd" id="f-add-time" required/>
+        <button class="b-create">Enter</button>
+        <br>
       </form>
-      <section id="greeting"></section>
-    </main>
-  </body>
+      <form class="f-edit" id="editForm">
+        <h2>EDIT</h2>
+        <input type="text" placeholder="No." id="f-edit-taskId" required/>
+        <input type="text" placeholder="Title" id="f-edit-title" required/>
+        <input type="text" placeholder="Description" id="f-edit-description" required/>
+        <input type="date" placeholder="yy-mm-dd" id="f-edit-time" required/>
+        <button class="b-edit">Enter</button>
+        <br>
+      </form>
+    </div>
+    
+
+</body>
+
 </html>

@@ -26,7 +26,8 @@ const formattedDate = formatTimestamp(task.dueDate);
 // Create the task DOM data for the task
 taskElement.innerHTML = `
 <div class="task-container" id="data-task-id">
-<h2 class="t-title">${task.title}</h2><p class="t-id">${index}<p/>
+<p class="t-id">${index}<p/>
+<h2 class="t-title">${task.title}</h2>
 <p class="t-description">${task.description}</p>
 <div class="btn">
 <button id="edit-btn"><a href="#editForm"><i class="fa-light fa-pen-to-square"></i></a></button>
@@ -162,7 +163,8 @@ const resultsHTML = searchResults.map((task, index) => {
 const formattedDate = formatTimestamp(task.dueDate);
 return `
 <div class="task-container" id="data-task-id">
-<h2 class="t-title">${task.title}</h2><p class="t-id">${index}<p/>
+<p class="t-id">${index}<p/>
+<h2 class="t-title">${task.title}</h2>
 <p class="t-description">${task.description}</p>
 <div class="btn">
 <button id="edit-btn"><a href="#editForm"><i class="fa-light fa-pen-to-square"></i></a></button>
@@ -265,7 +267,7 @@ editTaskById(taskId, task);
 
 // DELETE task from DOM --ANGELA YU'S METHOD
 // Assuming taskContainer is the container where tasks are added
-const taskContainer = document.getElementById("task-container");
+const taskContainer = document.getElementsByClassName("task-container");
 
 taskContainer.addEventListener("click", async (e) => {
     const target = e.target;

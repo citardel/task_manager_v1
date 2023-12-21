@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2A2A2A;
+    display: block;
+    padding-left: 5%;
+    padding-top: 5%;
+
+}
+
+.search{
+    display: flex;
+    padding: 1%;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    gap: 20px;
+    width: 400px;
+}
+
+.search_space{
+    border-radius: 4%;
+    border: 1px solid;
+    padding: 10px;
+    height: 40px;
+    width: 90%;
+}
+
+.search_button{
+    padding: 2%;
+    background-color: #c7c7c7;
+    border-radius: 10%;
+}
+
+.header{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #c7c7c7;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.part_1{
+    display: flex;
+    gap: 10%;
+ 
+}
+
+.box1{
+    border: 1px solid #c7c7c7;
+    border-radius: 10px;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    background-color: #444746;
+}
+
+.box1_text1{
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: #c7c7c7;
+    margin-bottom: 10px;
+    justify-content: center;
+
+
+}
+
+.box1_text2{
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: #c7c7c7;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 10%;
+
+
+}
+
+.button{
+    background-color: #444746;
+    margin: 0%;
+    border: 0;
+    padding: 0%;
+}
+
+.edit{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3%;
+    border: 1px solid #c7c7c7;
+    border-radius: 25px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 10%;
+
+}
+
+.edit_text1{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: #c7c7c7;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+}
+.inputs{
+    align-items: center;
+    justify-content: center;
+}
+
+.input_box{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 25px;
+    height: 30px;
+    width: 80%;
+    border-radius: 7px;
+    border: none;
+    margin: none;
+    padding: none;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.input_box2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 2%;
+    height: 30px;
+    width: 60%;
+    border-radius: 7px;
+    border: none;
+    margin-left: 30px;
+    padding: none;
+}
+
+.button_add{
+    display: flex;
+    justify-content: center;
+
+}
+
+.enter{
+    width: 60px;
+    height: 30px;
+    border-radius: 6px;
+    margin-top: 6%;
+    background-color: #c7c7c7;
+    font-family: sans-serif;
+    padding: 2%;
+    border: 0;
+    
+}
